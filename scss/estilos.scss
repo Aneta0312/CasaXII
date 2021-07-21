@@ -1,0 +1,392 @@
+@import "variables";
+@import "main";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+
+  
+  *  {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+
+}
+
+body{
+
+font-family: 'Open Sans',sans-serif;
+background-image: url(../media/nebulosas.jpg);
+
+}
+
+.contenedor {
+	width: 100%;
+	height: 100px;
+	max-width: 1140px;
+	margin:auto;   
+}
+
+
+header{
+	width: 100%;
+	height: 100px;	
+	background-color: #d4dddd44;			
+}
+
+.logo{
+	
+	padding: 10px 0px;	
+}
+
+	.logo img{
+	
+	width: 50px;
+	display:block;
+	margin:auto;
+	border-radius: 70%;
+	}
+
+ .menu{
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 430px;
+	margin:auto;
+	
+		
+ }
+
+ .menu a{
+	color: $texto;
+	text-decoration: none;
+	font-size: 14px;
+	text-align: center;
+	
+	}
+	.menu a:hover{
+		color:$primario;
+	}
+	/*fin header*/
+
+	/* inicio banner*/
+
+	.banner{
+		width: 100%;
+		height: 530px;
+		background-image: url(../media/cosmo.jpg);
+		background-position: center;	
+		background-size: cover;
+		
+	}
+
+	.banner > div{
+		width: 100%;
+		height: 100%;	
+	}
+
+	.ban{
+
+		text-align: center;
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		height: 100%;
+		align-items: center;	
+	}
+
+		.ban h1{
+		font-size:18px;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+		color: white;
+		background-color: rgba(0, 0, 0, 0.733); 
+		text-decoration: none;
+		padding: 10px 40px;
+		margin-top: 35px;
+		box-shadow: 0 05px 4px rgba(236, 236, 236, 0.89);	
+		
+		}
+		
+
+    .ban h2 {
+		font-size: 42px;
+		width: 100%;
+		padding: 45px 0;
+		background-color: rgba(241, 241, 241, 0.336); 
+		max-width: 480px;
+		
+	}
+
+		.ban a{
+				 font-size: 18px;
+				 text-decoration: none;
+				 color: white;
+				 padding: 10px 50px;
+				 background-color: rgba(0, 0, 0, 0.733); 
+				 margin-top: 35px;
+				 box-shadow: 0 05px 4px rgba(236, 236, 236, 0.89);			
+				 
+		}
+	.ban a:hover{
+		color: $primario;
+		background-color: $texto;
+		transition: 1.5s;
+	}
+	
+
+	
+	/*fin banner*/
+
+
+/*nosotros*/
+
+
+.nosotros {
+	max-width: 1000px;
+	width: 90%;
+	margin: 0 auto;
+	border: 1px solid white;
+	margin-top: 20px;
+	
+}
+
+.nosotros {
+	
+	border-radius: 15px;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	margin-bottom: 10px; 
+}
+
+.nos--titulo {
+	font-size:1.5rem;
+	margin-bottom: 10px;
+	color: white;
+}
+
+.nos--parrafo {
+	line-height: 28px;
+	font-size:1rem;	
+}
+
+
+@media all  and (min-width:421px) and (max-width:768px){
+	.nosotros{
+		width: 80%;
+	}
+}
+@media all and (max-width:420px) {
+	.nosotros{
+		width: 100%;
+	}
+	
+}
+/*fin nosotros*/
+
+/*servicios*/
+
+
+.formacion{
+	max-width: 1000px;
+	height: max-content;
+	border: 1px solid white;
+	border-radius: 15px;
+	padding: 20px;
+	display: flex;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+	.formacion p, .h2{
+		justify-content: center;
+
+}
+.lista{
+	max-width: 1000px;
+	height: max-content;
+	border: 1px solid white;
+    background-color:#1638647e;
+	border-radius: 15px;
+	padding: 20px;
+	display: flex;
+	
+
+}
+.lista ul li{
+	text-align: left;
+		display: flex;
+		margin:10px;
+		flex-flow: column wrap;
+		justify-content: center;
+		margin: auto;
+		line-height: 30px;
+		}
+		/*fin formacion*/
+
+/*novedades*/
+.novedades h2{
+	
+text-align-last: center;
+
+margin-top: 30px;
+}
+/*fin novedades*/
+
+/*contacto*/
+
+#Contacto{
+	h1, form{
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	color: white;
+	padding: 15px;
+	line-height: 30px;
+	}
+	}
+
+
+.formulario{
+	font-size:14px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	padding: 15px;
+	line-height: 30px;
+}
+
+.button{
+
+	margin-left:15px;
+	flex-flow: column wrap;
+	padding-top: 15px;
+	display: flex;
+	padding-bottom: 50px;
+	
+
+}
+.button button:hover{
+    background-color: #14bcc2d5;
+    
+
+}
+.button label{
+	font-size: 16px;
+	padding-bottom: 10px;
+}
+
+.button button{
+	background-color: #f0f0e7;
+	 font-size: 14px;
+	 margin-top: 10px;
+	 width: 500px;
+	 border-radius: 10px;
+	 border: 3px solid #14bcc2d5;
+	 	 
+}
+.button textarea{
+	width: 500px;
+	height: 150px;
+	border-radius: 10px;
+	background-color: #f0f0e7;
+	border: 3px solid #14bcc2d5;
+	
+}
+
+@media all  and (min-width:421px) and (max-width:768px){
+	.button textarea, .button button{
+		width: 80%;
+	}
+}
+@media all and (max-width:420px) {
+	.buton textarea, button button{
+		width: 100%;
+	}
+	
+}
+/*fin contacto*/
+
+
+
+/*footer*/
+
+.top-footer{
+    background-color: #14bcc2d5;
+	height: 35px;
+	p{
+		text-align: center;
+		font-size: large;
+		padding: auto;
+		color: $secundario;	
+	}
+}
+.center-footer{
+	background-color: #9baad34f;
+
+	.bottom-footer{
+		background-color: #14bcc2d5;
+		height: 25px;
+}
+
+.bottom-footer p{
+	text-align: center;
+	font-size: 12px;
+	color: $primario;
+}
+
+}
+.social-media ul{
+
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 430px;
+	margin:auto;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	
+}
+
+.social-media ul li{
+    list-style-type: none;
+    margin: 0 15px;
+}
+
+.social-media ul li .fab{
+    font-size: 30px;
+    line-height: 60px;
+    transition: 0.6s;
+    color: #fff;
+	
+}
+
+.social-media ul li a{
+    display: block;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    background-color: #000;
+    text-align: center;
+    box-shadow: 0 05px 4px rgba(236, 236, 236, 0.89);
+}
+
+.social-media ul li .fab:hover{
+    color: #fff;
+}
+.social-media ul li a:hover{
+    transform: translate(0, -15%);
+    transition: 0.5s;
+}
+
+.social-media ul li:nth-child(1) a:hover{
+    background-color: #3b5998;
+}
+.social-media ul li:nth-child(2) a:hover{
+    background-color: #e4405f;
+}
+
+.social-media ul li:nth-child(4) a:hover{
+    background-color: #1da1f2;
+}
