@@ -4,10 +4,15 @@ p, h3, h2, h1, ul, li, label, .formulario{
     color:$texto;
 }
 
+.header, .footer{
+    background-color: rgba(221, 215, 215, 0.123);
+}
+.bottom-footer, .top-footer{
+    background-color: rgba(25, 34, 34, 0.835);
 
-   
+}
 
 
 .nosotros, .formacion{
-    background-color: #1d3e687c;
+    background-color: rgba(136, 154, 179, 0.349);
 }
