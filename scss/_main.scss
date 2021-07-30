@@ -5,14 +5,16 @@ p, h3, h2, h1, ul, li, label, .formulario{
 }
 
 .header, .footer{
-    background-color: rgba(221, 215, 215, 0.123);
+    background-color: rgba(233, 241, 243, 0.123);
 }
-.bottom-footer, .top-footer{
-    background-color: rgba(25, 34, 34, 0.835);
+.bottom-footer{
+    background-color:  rgba(9, 53, 54, 0.961);
 
 }
 
 
-.nosotros, .formacion{
-    background-color: rgba(136, 154, 179, 0.349);
+.nosotros, .formacion, .lista{
+    background-color: rgba(208, 215, 223, 0.719);
+    background-image: url(../media/estrellas.jpg);
 }
+

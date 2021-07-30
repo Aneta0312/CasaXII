@@ -4,15 +4,16 @@ p, h3, h2, h1, ul, li, label, .formulario {
 }
 
 .header, .footer {
-  background-color: rgba(221, 215, 215, 0.123);
+  background-color: rgba(233, 241, 243, 0.123);
 }
 
-.bottom-footer, .top-footer {
-  background-color: rgba(25, 34, 34, 0.835);
+.bottom-footer {
+  background-color: rgba(9, 53, 54, 0.961);
 }
 
-.nosotros, .formacion {
-  background-color: rgba(136, 154, 179, 0.349);
+.nosotros, .formacion, .lista {
+  background-color: rgba(208, 215, 223, 0.719);
+  background-image: url(../media/estrellas.jpg);
 }
 
 * {
@@ -24,7 +25,7 @@ p, h3, h2, h1, ul, li, label, .formulario {
 
 body {
   font-family: 'Open Sans',sans-serif;
-  background-color: rgba(84, 84, 161, 0.959);
+  background-color: rgba(20, 88, 90, 0.961);
 }
 
 .contenedor {
@@ -36,7 +37,7 @@ body {
 
 header {
   width: 100%;
-  height: 130px;
+  height: 180px;
   background-color: rgba(209, 219, 189, 0.192);
 }
 
@@ -45,7 +46,7 @@ header {
 }
 
 .logo img {
-  width: 70px;
+  width: 100px;
   display: block;
   margin: auto;
   border-radius: 50%;
@@ -86,7 +87,7 @@ header {
 /* inicio banner*/
 .banner {
   width: 100%;
-  height: 530px;
+  height: 500px;
   background-image: url(../media/cosmo.jpg);
   background-position: center;
   background-size: cover;
@@ -228,7 +229,6 @@ header {
   height: -moz-max-content;
   height: max-content;
   border: 1px solid white;
-  background-color: #1638647e;
   border-radius: 15px;
   padding: 20px;
   display: -webkit-box;
@@ -341,63 +341,149 @@ header {
 
 /*fin contacto*/
 /*footer*/
+#info-contacto {
+  width: 66%;
+  float: left;
+  padding-bottom: 25px;
+  font-size: 17px;
+  color: rgba(253, 253, 252, 0.918);
+  margin: 10px 0 15px 10px;
+}
+
+#info-contacto h3 {
+  margin: 0 0 15px 0;
+  color: #B7CACD;
+  font-size: 19px;
+  font-weight: normal;
+  font-family: 'Rosario', sans-serif;
+}
+
+#info-contacto h3 span {
+  color: #A0E9F2;
+}
+
+#suscripcion {
+  float: right;
+  width: 33%;
+  padding-bottom: 25px;
+}
+
 .newsletter-suscripcion {
-  margin-left: 800px;
-  background-color: cadetblue;
-  padding-top: 15px;
+  margin-right: 30px;
+  background-origin: padding-box;
 }
 
 .newsletter-suscripcion h3 {
-  margin-left: 10px;
+  margin: 0 0 15px 0;
+  color: #B7CACD;
   font-size: 19px;
-  margin-bottom: 10px;
+  font-weight: normal;
+  font-family: 'Rosario', sans-serif;
 }
 
-.newsletter-signup-controls {
+.input-group {
   position: relative;
   display: table;
   border-collapse: separate;
-  margin-left: 10px;
-  border-radius: 10%;
 }
 
-.form-control {
-  height: 30px;
-  margin-left: 10px;
+.input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child > .btn, .input-group-btn:first-child > .btn-group > .btn, .input-group-btn:first-child > .dropdown-toggle, .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle), .input-group-btn:last-child > .btn-group:not(:last-child) > .btn {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .input-group-btn {
-  font-size: small;
-  background-color: darkgoldenrod;
-  height: 30px;
+  position: relative;
+  font-size: 0;
+  white-space: nowrap;
+}
+
+.input-group-addon, .input-group-btn {
+  width: 1%;
+  vertical-align: middle;
+}
+
+.input-group-btn, .input-group-addon, .input-group .form-control {
+  display: table-cell;
+}
+
+.input-group .form-control {
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.newsletter-signup-controls input {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.form-control {
+  padding: 4px 12px;
+  line-height: 1.42;
+  color: #777777;
+  border-radius: 4px;
+}
+
+.btn {
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-indent: 0px;
+  text-shadow: none;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 6px;
+  background-color: #777777;
+  border-radius: 4px;
+}
+
+.newsletter-signup-message {
+  color: #FFF;
 }
 
 .top-footer {
-  height: 35px;
+  padding-top: 20px;
+  border-top: 8px solid #B7CACD;
+  position: relative;
 }
 
-.top-footer p {
-  text-align: center;
-  font-size: large;
-  padding: auto;
-  color: white;
-}
-
-.center-footer {
-  background-color: #9baad34f;
-}
-
-.center-footer .bottom-footer {
+.bottom-footer {
   height: 25px;
 }
 
-.center-footer .bottom-footer p {
+.bottom-footer p {
   text-align: center;
-  font-size: 12px;
+  font-size: 10px;
   color: white;
 }
 
 .social-media ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 430px;
+  margin: auto;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+.social-media ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -412,8 +498,8 @@ header {
           justify-content: space-between;
   max-width: 430px;
   margin: auto;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 30px;
 }
 
 .social-media ul li {
@@ -442,7 +528,7 @@ header {
           box-shadow: 0 5px 4px rgba(236, 236, 236, 0.89);
 }
 
-.iconito {
+.fa {
   color: white;
   font-size: 20px;
 }
@@ -464,7 +550,7 @@ header {
 }
 
 .social-media ul li:nth-child(2) a:hover {
-  background-color: #e4405f;
+  background-color: #11e7cb;
 }
 
 .social-media ul li:nth-child(3) a:hover {
