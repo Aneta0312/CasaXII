@@ -61,16 +61,20 @@ header{
  }
 
  .menu a{
+
 	color: $texto;
 	text-decoration: none;
-	font-size: 14px;
+	font-size: 16px;
 	text-align: center;
+	
 	}
 
 	.menu a:hover{
+		
 		color:$primario;
-			background-color: $fondo;
-			transition: 0.5s;	
+			background-image: url(../media/estrellas.jpg);
+			transition: 0.5s;
+			box-shadow: 10px 05px 4px rgba(236, 236, 236, 0.89);	
 	}
 
 	/*fin header*/
@@ -149,25 +153,34 @@ header{
 	max-width: 1000px;
 	width: 90%;
 	margin: 0 auto;
-	border: 1px solid white;
+	border-radius: 15px;
 	margin-top: 20px;
 	
 }
 
-.nosotros {
-	
+.nos {
+	border: 1px solid white;
 	border-radius: 15px;
 	padding: 20px;
 	display: flex;
 	align-items: center;
 	position: relative;
-	margin-bottom: 10px; 
+	margin-bottom: 50px; 
+}
+
+.nos--img {
+	width: 300px;
+	height: 180px;
+	margin-right: 30px;
+	border: 1px solid white;
+	border-radius: 20px;
+	
 }
 
 .nos--titulo {
-	font-size:1.5rem;
-	margin-bottom: 10px;
 	color: white;
+	font-size:1.5rem;
+	margin-bottom: 20px;
 }
 
 .nos--parrafo {
@@ -191,6 +204,9 @@ header{
 
 /*servicios*/
 
+.secFormacion{
+	padding: 10px;
+}
 
 .formacion{
 	max-width: 1000px;
@@ -213,8 +229,8 @@ header{
 	border-radius: 15px;
 	padding: 20px;
 	display: flex;
+	margin-bottom: 30px;
 	
-
 }
 .lista ul li{
 	text-align: left;
@@ -241,7 +257,8 @@ header{
 .container{
 	width: 100%;
 	width: 550px;
-	margin-top:80px;
+	margin-top:60px;
+	 margin-bottom: 30px;
 
 }
 
@@ -252,9 +269,9 @@ header{
 #Contacto{
 	h1, form{
 	text-transform: uppercase;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 	color: $texto;
-	padding: 15px;
+	padding: 10px;
 	line-height: 30px;
 	}
 	}
@@ -270,11 +287,12 @@ header{
 
 .button{
 
-	margin-left:15px;
+	margin-left:10px;
 	flex-flow: column wrap;
-	padding-top: 15px;
+	padding-top: 10px;
 	display: flex;
-	padding-bottom: 50px;
+	padding-bottom: 20px;
+	align-items: center;
 	
 
 }
@@ -285,7 +303,7 @@ header{
 }
 .button label{
 	font-size: 16px;
-	padding-bottom: 10px;
+	padding-bottom: 5px;
 }
 
 .button button{
@@ -302,9 +320,11 @@ header{
 	height: 150px;
 	border-radius: 10px;
 	background-color: #f0f0e7;
-	border: 3px solid #14bcc2d5;
-	
-}
+	border: 3px solid #14bcc2d5;	
+	}
+
+
+
 
 @media all  and (min-width:421px) and (max-width:768px){
 	.button textarea, .button button{
@@ -439,12 +459,14 @@ border-collapse: separate;
 
 	.bottom-footer{
 		height: 25px;
+		padding-top: 25px;
 }
 
 .bottom-footer p{
 	text-align: center;
 	font-size: 10px;
 	color: $texto;
+	 background-color:  rgba(9, 53, 54, 0.961);
 }
 
 
@@ -493,7 +515,7 @@ border-collapse: separate;
     width: 60px;
     height: 60px;
     position: relative;
-    background-color: #000;
+    background-image: url(../media/estrellas.jpg);
     text-align: center;
 	padding-top:18px ;
     box-shadow: 0 05px 4px rgba(236, 236, 236, 0.89);
